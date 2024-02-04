@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zakupów z Ceną</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shoppingList.css">
+</head>
+<body>
+    <h2>Lista Zakupów</h2>
+    <label for="newProduct">Wpisz nazwę nowego produktu:</label>
+    <input type="text" id="newProduct" name="newProduct">
+    <label for="productPrice">Cena:</label>
+    <input type="text" id="productPrice" name="productPrice">
+    <button onclick="addNewProductToList()">Dodaj Nowy Produkt do Listy</button>
+    <br><br>
+    <select id="productSelect">
+        <option value="">Wybierz produkt...</option>
+    </select>
+    <button onclick="addProduct()">Dodaj Produkt</button>
+    <button onclick="removeProduct()">Usuń Produkt</button>
+
+    <table id="shoppingList">
+        <tr>
+            <th>Produkt</th>
+            <th>Cena</th>
+        </tr>
+    </table>
+
+    <script src="app.js"></script>
+    
+    <script src="shoppingList.js"></script>
+</body>
+</html>

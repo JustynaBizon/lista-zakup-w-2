@@ -9,26 +9,32 @@
 </head>
 <body>
     <h2>Lista Zakupów</h2>
-    <label for="newProduct">Wpisz nazwę nowego produktu:</label>
-    <input type="text" id="newProduct" name="newProduct">
-    <label for="productPrice">Cena:</label>
-    <input type="text" id="productPrice" name="productPrice">
-    <button onclick="addNewProductToList()">Dodaj Nowy Produkt do Listy</button>
+    
+        <label for="newProduct">Wpisz nazwę nowego produktu:</label>
+        <input type="text" id="newProduct" name="newProduct">
+        
+        <label for="productPrice">Cena:</label>
+        <input type="text" id="productPrice" name="productPrice">
+        
+        <button onclick="addNewProductToList()">Dodaj Nowy Produkt do Listy</button>
+
     <br><br>
+    
     <select id="productSelect">
         <option value="">Wybierz produkt...</option>
     </select>
+
     <button onclick="addProduct()">Dodaj Produkt</button>
     <button onclick="removeProduct()">Usuń Produkt</button>
 
-    <table id="shoppingList">
+    <table id="shoppingTable">
         <tr>
+            <th>Nr</th>
             <th>Produkt</th>
             <th>Cena</th>
+            <th/>
         </tr>
     </table>
-
-    <script src="app.js"></script>
     
     <script src="shoppingList.js"></script>
 </body>
